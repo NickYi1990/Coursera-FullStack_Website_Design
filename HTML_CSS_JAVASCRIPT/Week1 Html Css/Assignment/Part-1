@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+
+</head>
+
+<body>
+  <h1> Please Enter Your Details For Our Dating Website!</h1>
+  <fieldset>
+    <legend> Your Face</legend>
+    Your image: <input type="file"><br>
+    Image preview:
+  </fieldset>
+
+  <fieldset>
+    <legend> Your General Details</legend>
+    Name: <input type="text" placeholder="Your Full Name"><br>
+    Gender: <input type="radio">Male<input type="radio">Female<br>
+    Age: <input type="number" value="18"><br>
+    Date of Birth: <input type="date"><br>
+    Favorite color: <input type="color"><br>
+    Which Country:
+    <select>
+      <option value="no selection">no selection</option>
+      <option value="Beijing">Beijing</option>
+      <option value="Nanjing">Nanjing</option>
+      <option value="Tianjing">Tianjing</option>
+      <option value="Dongjing">Dongjing</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend> Your indicators</legend>
+    Your image: <input type="file"><br>
+    Image preview:
+  </fieldset>
+</body>
