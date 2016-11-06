@@ -1,0 +1,69 @@
+<!doctype html>
+<head>
+
+</head>
+
+<body>
+  <h1> Please Enter Your Details For Our Dating Website!</h1>
+  <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+  <fieldset>
+    <legend> Your Face</legend>
+    <label for="uploadfile"> Your Image: </label>
+    <input type="file" id="uploadfile" name="uploadfile" accept="image" required><br>
+    <label for="preview"> Image preview: </label>
+    <img id="preview">
+  </fieldset>
+
+  <fieldset>
+    <legend> Your General Details</legend>
+    <label for="name"> Name: </label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required><br>
+    <label for="gender"> Gender: </label>
+    <input type="radio" id="gender" name="gender" value="gender" required>Male
+    <input type="radio" id="gender" name="gender" value="gender" required>Female<br>
+    <label for="age"> Age: </label>
+    <input type="number" id="age" name="age" value="18"><br>
+    <label for="birth"> Date of Birth:  </label>
+    <input type="date" id="birth" name="birth"><br>
+    <label for="color"> Favorite color: </label>
+    <input type="color" id="color" name="color"><br>
+
+    <label for="city"> Which Country: </label>
+    <select id="city" name="city">
+      <option value="no selection">no selection</option>
+      <option value="Beijing">Beijing</option>
+      <option value="Nanjing">Nanjing</option>
+      <option value="Tianjing">Tianjing</option>
+      <option value="Dongjing">Dongjing</option>
+      <option value="Xijing">Xijing</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend> Your indicators</legend>
+    <label for="height"> Height: </label>
+    Short<input type="range" id="height" name="height" min="0" max="100" value="50"> Tall<br>
+    <label for="salary"> Salary: </label>
+    Poor<input type="range" id="salary" name="salary" min="0" max="100" value="50"> Rich<br>
+  </fieldset>
+
+  <fieldset>
+    <legend> Your Contact Information</legend>
+    <label for="email"> Email: </label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="tel"> Mobile: </label>
+    <input type="tel" id="tel" name="tel"><br>
+    <label for="address"> Address: </label>
+    <textarea id="address" name="address">
+
+    </textarea><br>
+    <label for="cb"> Mehtod to contact you: </label>
+    <input type="checkbox" id="cb" name="cb" value="email">Email
+    <input type="checkbox" id="cb" name="cb" value="whatsapp">Whatsapp
+    <input type="checkbox" id="cb" name="cb" value="in-app-chat">In-app chat
+  </fieldset>
+
+  <input type="submit">
+</form>
+  <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
