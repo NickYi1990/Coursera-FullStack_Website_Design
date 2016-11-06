@@ -1,0 +1,45 @@
+<!doctype html>
+
+
+<html>
+  <head></head>
+  <body>
+
+    <script>
+      // define variables
+      var right_color;
+      var colors = ['Black', 'Blue', 'Brown', 'Cyan', 'DarkBlue', 'Green', 'Grey', 'LightBlue',
+                    'Lime', 'Maroon', 'Orange', 'Red', 'Purple', 'Silver', 'White', 'Yellow'];
+      var guess_wrong = true;
+      var guess_count = 0;
+
+      // define function
+      function do_game(){
+        right_color = colors[Math.floor(Math.random()* (colors.length))];
+        // alert(right_color)
+        check_guess();
+      }
+      function check_guess(){
+        while (guess_wrong) {
+          guess_count++;
+          your_color = prompt("I am thinking of one of these colors: \n\n" +
+                              colors + "\n\n What color am I thinking of?");
+          if (colors.indexOf(your_color) == -1) {
+            alert("I don't recognize that color! If the text entered by the player is not in the array of colors.");
+          }else if(your_color > right_color){
+            alert('Your input is alphabetically higher than mine!');
+          }else if(your_color < right_color){
+            alert('Your input is alphabetically lower than mine!');
+          }else{
+            alert("You are right! You took " + guess_count + " guesses!")
+            myBody=document.getElementsByTagName("body")[0];
+            myBody.style.background=right_color;
+            guess_wrong = false;
+          }
+        }
+      }
+      // begin the game
+      do_game();
+    </script>
+  </body>
+</html>

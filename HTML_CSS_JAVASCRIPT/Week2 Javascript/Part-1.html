@@ -1,0 +1,36 @@
+<!doctype html>
+
+
+<html>
+  <head></head>
+  <body>
+
+    <script>
+      // define variables
+      var right_color;
+      var colors = ['Black', 'Blue', 'Brown', 'Cyan', 'DarkBlue', 'Green', 'Grey', 'LightBlue',
+                    'Lime', 'Maroon', 'Orange', 'Red', 'Purple', 'Silver', 'White', 'Yellow'];
+      var guess_wrong = true;
+      var guess_count = 0;
+
+      // define function
+      function do_game(){
+        right_color = colors[Math.floor(Math.random()* (colors.length))];
+        alert(right_color)
+
+        while (guess_wrong) {
+          your_color = prompt("I am thinking of one of these colors: \n\n" +
+                              colors + "\n\n What color am I thinking of?");
+          if (your_color != right_color) {
+
+          }else {
+            guess_wrong = false;
+          }
+          guess_count++;
+        }
+      }
+      // begin the game
+      do_game();
+    </script>
+  </body>
+</html>
