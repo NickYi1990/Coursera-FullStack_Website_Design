@@ -28,7 +28,9 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -73,8 +75,8 @@
                       Contact</a></li>
                 </ul>
 
-                  <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form">
+                  <!-- <ul class="nav navbar-nav navbar-right"> -->
+                    <form class="navbar-form navbar-right">
                       <div class="form-group">
                         <label class="sr-only" for="email">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="Email" />
@@ -92,7 +94,7 @@
                       </div>
                       <button class="btn btn-info" type="button">Sign In</button>
                     </form>
-                  </ul>
+                  <!-- </ul> -->
             </div>
         </div>
     </nav>
@@ -161,7 +163,7 @@
               <div class="media">
 
                 <div class="media-body">
-                  <h2>Weekend Grand Buffet <span class="label label-danger label-xs">Hot</span></h2>
+                  <h2>Weekend Grand Buffet <span class="label label-danger label-xs">New</span></h2>
 
                   <p>Featuring mouthwatering combinations with a choice of
                     five different salads, six enticing appetizers, six main
@@ -207,16 +209,16 @@
             </div>
         </div>
 
-        <div class="row row-content" id="reserve">
+        <div class="row row-content">
           <div class="col-xs-12 col-sm-3">
             <p style="padding:20px;"></p>
             <h3> Reserve a Table</h3>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <form class="form-horizontal">
+            <form class="form-horizontal" role="form" id="reserve">
               <div class="form-group">
                 <label for="radio" class="col-sm-2"> Number of Guests</label>
-                <div class="col-sm-7">
+                <div class="col-sm-7" id="radio">
                 <label class="radio-inline">
                   <input type="radio" name="inlineRadioOptions" id="rd1" value="rd1" />1
                 </label>
@@ -264,7 +266,6 @@
                 <strong>Warning::</strong> Plase
                   <a href="#" >call</a>
                   us to reserve for more than six guests.
-
               </div>
             </form>
           </div>
